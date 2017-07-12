@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import MainRoute from '../route/Routes'
+import MainRoute from '../Routes'
 
 export default withRouter(
   class extends Component {
