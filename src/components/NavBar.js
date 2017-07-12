@@ -1,55 +1,53 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
-const activeClass = { activeClassName: 'is-active' }
-
 class AppNavDrawer extends Component {
   render() {
     return (
       <nav className="">
         <div className="">
           <div>
-            <NavLink exact to="/" className="" {...activeClass}>
+            <NavLink exact to="/">
               Home
             </NavLink>
           </div>
           <div>
-            {' '}<NavLink to="/migrate" className="" {...activeClass}>
+            <NavLink to="/migrate">
               Migrate
             </NavLink>
           </div>
           <div>
-            {' '}<NavLink to="/ipis" className="" {...activeClass}>
+            <NavLink to="/ipis">
               Ipis
             </NavLink>
           </div>
           <div>
-            <NavLink to="/crvs" className="" {...activeClass}>
+            <NavLink to="/crvs">
               Crvs
             </NavLink>
           </div>
           <div>
-            {' '}<NavLink to="/nat" className="" {...activeClass}>
+            <NavLink to="/nat">
               Nat
             </NavLink>
           </div>
           <div>
-            {' '}<NavLink to="/res" className="" {...activeClass}>
+            <NavLink to="/res">
               Res
             </NavLink>
           </div>
           <div>
-            {' '}<NavLink to="/genapp" className="" {...activeClass}>
+            <NavLink to="/genapp">
               Genapp
             </NavLink>
           </div>
           <div>
-            {' '}<NavLink to="/mobile" className="" {...activeClass}>
+            <NavLink to="/mobile">
               Mobile
             </NavLink>
           </div>
           <div>
-            {' '}<NavLink to="/mobile_unit" className="" {...activeClass}>
+            <NavLink to="/mobile_unit">
               Mobile_unit
             </NavLink>
           </div>
@@ -57,7 +55,5 @@ class AppNavDrawer extends Component {
       </nav>
     )
   }
-
-  
 }
 export default AppNavDrawer

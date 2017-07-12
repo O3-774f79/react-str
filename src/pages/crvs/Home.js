@@ -1,9 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link ,Switch} from 'react-router-dom'
 
 import AddAdop from '../crvs/AddAdop'
 import AddBirth from '../crvs/AddBirth'
 const BasicExample = () => (
+  <Switch >
   <Router>
     <div>
       <ul>
@@ -15,18 +16,7 @@ const BasicExample = () => (
       <Route path="/crvs/addbirth" component={AddBirth} />
     </div>
   </Router>
-)
-
-const Home = () => (
-  <div>
-    <h2>AddAdop</h2>
-  </div>
-)
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
+  </Switch>
 )
 
 export default BasicExample
