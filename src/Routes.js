@@ -9,7 +9,7 @@ import HomeMigrate from './screens/migrate/Home'
 import ModalGallery from './screens/nat/Home'
 import HomeRes from './screens/res/Home'
 import HomeMobile from './screens/mobile/Home'
-import LoginMobile from './screens/mobile_unit/login'
+import MobileUnitMenu from './screens/mobile_unit/Menu'
 import AppNavDrawer from './components/NavBar'
 
 class MainRoute extends Component {
@@ -25,7 +25,7 @@ class MainRoute extends Component {
           <Route path="/res" component={HomeRes} />
           <Route path="/genapp" component={HomeGenapp} />
           <Route path="/mobile" component={HomeMobile} />
-          <Route path="/mobile_unit" component={LoginMobile} />        
+          <Route path="/mobile_unit" component={MobileUnitMenu} />        
           <Route path="*" component={PageNotFound} />
         </Switch>
       </div>

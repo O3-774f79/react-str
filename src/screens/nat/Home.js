@@ -1,44 +1,24 @@
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from 'react-router-dom'
-class HomeNat extends React.Component {
-  render() {
-    return (
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+
+import AddNat from './AddNat'
+const HomeNat = () => (
+  <Switch>
+    <Router>
       <div>
-        <Switch >
-          <Route exact path='/' component={Home}/>
-          <Route path='/gallery' component={Gallery}/>
-        </Switch>
-    
+        <ul>
+          <li><Link to="/nat/addnat">addnat</Link></li>
+          <li><Link to="/nat/enqnat">enqnat</Link></li>
+          <li><Link to="/nat/report">report</Link></li>
+        </ul>
+
+        <Route path="/nat/addnat" component={AddNat} />
+        <Route path="/nat/enqnat" component={AddNat} />
+        <Route path="/nat/report" component={AddNat} />
+        <Route path="/nat" component={AddNat} />
       </div>
-    )
-  }
-}
-
-const Home = () => (
-  <div>
-    <Link to='/gallery'>Visit the Gallery</Link>
-    <h2>Featured Images</h2>
-    <ul>
-      <li><Link to='/img/2'>Tomato</Link></li>
-      <li><Link to='/img/4'>Crimson</Link></li>
-    </ul>
-  </div>
+    </Router>
+  </Switch>
 )
 
-const Gallery = () => (
-  <div>
-  <h1>Test</h1>
-  </div>
-)
-const ModalGallery = () => (
-  <Router>
-    <Route component={HomeNat} />
-  </Router>
-)
-
-export default ModalGallery
+export default HomeNat
