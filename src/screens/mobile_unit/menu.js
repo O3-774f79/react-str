@@ -2,6 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 import AddPerson from './AddPerson'
+import ChkData from './ChkData'
+import ExprortData from './ExportData'
+import SendData from './SendData'
+
 const MobileUnitMenu = () => (
   <Switch>
     <Router>
@@ -14,10 +18,9 @@ const MobileUnitMenu = () => (
         </ul>
 
         <Route path="/mobile_unit/addperson" component={AddPerson} />
-        <Route path="/mobile_unit/chkdata" component={AddPerson} />
-        <Route path="/mobile_unit/exportdata" component={AddPerson} />
-        <Route path="/mobile_unit/senddata" component={AddPerson} />
-        <Route path="/mobile_unit" component={AddPerson} />
+        <Route path="/mobile_unit/chkdata" component={ChkData} />
+        <Route path="/mobile_unit/exportdata" component={ExprortData} />
+        <Route path="/mobile_unit/senddata" component={SendData} />
       </div>
     </Router>
   </Switch>

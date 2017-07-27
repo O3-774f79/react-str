@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 import AddNat from './AddNat'
+import EnqNat from './EnqNat'
+import Report from './ReportNat'
 const HomeNat = () => (
   <Switch>
     <Router>
@@ -13,9 +15,8 @@ const HomeNat = () => (
         </ul>
 
         <Route path="/nat/addnat" component={AddNat} />
-        <Route path="/nat/enqnat" component={AddNat} />
-        <Route path="/nat/report" component={AddNat} />
-        <Route path="/nat" component={AddNat} />
+        <Route path="/nat/enqnat" component={EnqNat} />
+        <Route path="/nat/report" component={Report} />
       </div>
     </Router>
   </Switch>

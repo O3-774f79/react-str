@@ -2,6 +2,11 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 import AddHouse from './AddHouse'
+import EditHouse from './EditHouse'
+import EnqHouse from './EnqHouse'
+import EnqMove from './EnqMove'
+import Move from './Move'
+import UpMove from './UpdMove'
 const HomeRes = () => (
   <Switch>
     <Router>
@@ -16,12 +21,11 @@ const HomeRes = () => (
         </ul>
 
         <Route path="/res/addhouse" component={AddHouse} />
-        <Route path="/res/edithouse" component={AddHouse} />
-        <Route path="/res/enqhouse" component={AddHouse} />
-        <Route path="/res/enqmove" component={AddHouse} />
-        <Route path="/res/move" component={AddHouse} />
-        <Route path="/res/updmove" component={AddHouse} />
-        <Route path="/res" component={AddHouse} />
+        <Route path="/res/edithouse" component={EditHouse} />
+        <Route path="/res/enqhouse" component={EnqHouse} />
+        <Route path="/res/enqmove" component={EnqMove} />
+        <Route path="/res/move" component={Move} />
+        <Route path="/res/updmove" component={UpMove} />
       </div>
     </Router>
   </Switch>

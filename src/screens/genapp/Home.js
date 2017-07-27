@@ -1,7 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-
-import Eis from './eis'
+import Eis from './Eis'
+import Emp from './Emp'
+import Fee from './Fee'
+import LookUpTable from './LookupTable'
 const HomeGenapp = () => (
   <Switch>
     <Router>
@@ -14,10 +16,9 @@ const HomeGenapp = () => (
         </ul>
 
         <Route path="/genapp/eis" component={Eis} />
-        <Route path="/genapp/emp" component={Eis} />
-        <Route path="/genapp/fee" component={Eis} />
-        <Route path="/genapp/lookuptable" component={Eis} />
-        <Route path="/genapp" component={Eis} />
+        <Route path="/genapp/emp" component={Emp} />
+        <Route path="/genapp/fee" component={Fee} />
+        <Route path="/genapp/lookuptable" component={LookUpTable} />
       </div>
     </Router>
   </Switch>
